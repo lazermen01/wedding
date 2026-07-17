@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Зейра и Валентин | Сватба 2028</title>
-    <!-- Зареждане на шрифтове -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Начален екран (Hero Section) -->
-    <header class="hero">
+    <!-- Анимиран заден фон, който стои зад всичко -->
+    <div class="animated-background">
+        <div class="blob blob-green"></div>
+        <div class="blob blob-pink"></div>
+    </div>
+
+    <!-- Начален екран -->
+    <header class="hero reveal">
         <div class="hero-content">
             <p class="subtitle">Ние се женим!</p>
             <h1 class="names">Зейра <span>&</span> Валентин</h1>
@@ -20,7 +25,7 @@
     </header>
 
     <!-- Секция с отброяване -->
-    <section class="countdown-section">
+    <section class="countdown-section reveal">
         <h2>Остават</h2>
         <div id="countdown" class="countdown-container">
             <!-- JavaScript ще попълни цифрите тук -->
@@ -28,71 +33,75 @@
     </section>
 
     <!-- Нашата история -->
-    <section class="story">
-        <div class="container">
+    <section class="story reveal">
+        <div class="container glass-panel">
             <h2>Нашата История</h2>
             <p>Всичко започна с една случайна среща, която прерасна в най-красивото ни приключение. Сега, след безброй незабравими моменти заедно, сме готови да кажем "ДА" пред най-близките си хора.</p>
         </div>
     </section>
 
     <!-- Програма на събитието -->
-    <section class="program">
-        <h2>Програма</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="time">15:30 ч.</div>
-                <div class="event">
-                    <h3>Добре дошли!</h3>
-                    <p>Посрещане на гостите с шампанско и леки коктейли.</p>
+    <section class="program reveal">
+        <div class="container glass-panel">
+            <h2>Програма</h2>
+            <div class="timeline">
+                <div class="timeline-item hover-effect">
+                    <div class="time">15:30 ч.</div>
+                    <div class="event">
+                        <h3>Добре дошли!</h3>
+                        <p>Посрещане на гостите с шампанско и леки коктейли.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="timeline-item">
-                <div class="time">16:30 ч.</div>
-                <div class="event">
-                    <h3>Изнесена церемония</h3>
-                    <p>Официалното "Да", размяна на халки и клетви.</p>
+                <div class="timeline-item hover-effect">
+                    <div class="time">16:30 ч.</div>
+                    <div class="event">
+                        <h3>Изнесена церемония</h3>
+                        <p>Официалното "Да", размяна на халки и клетви.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="timeline-item">
-                <div class="time">18:00 ч.</div>
-                <div class="event">
-                    <h3>Празнична вечеря</h3>
-                    <p>Настаняване в ресторанта, наздравици и първи сватбен танц.</p>
+                <div class="timeline-item hover-effect">
+                    <div class="time">18:00 ч.</div>
+                    <div class="event">
+                        <h3>Празнична вечеря</h3>
+                        <p>Настаняване в ресторанта, наздравици и първи сватбен танц.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="timeline-item">
-                <div class="time">23:00 ч.</div>
-                <div class="event">
-                    <h3>Сватбена торта</h3>
-                    <p>Сладкият завършек на вечерта и продължение на партито!</p>
+                <div class="timeline-item hover-effect">
+                    <div class="time">23:00 ч.</div>
+                    <div class="event">
+                        <h3>Сватбена торта</h3>
+                        <p>Сладкият завършек на вечерта и продължение на партито!</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Локация и Дрескод -->
-    <section class="details">
-        <div class="card">
+    <section class="details reveal">
+        <div class="card hover-effect">
             <h2>Локация</h2>
-            <p class="detail-text"><strong>Комплекс "Райска Градина" (Примерно име)</strong></p>
+            <p class="detail-text"><strong>Комплекс "Райска Градина" (Пример)</strong></p>
             <p class="detail-text">Ще се радваме да споделите този ден с нас на едно приказно място сред природата. Точната локация и адрес ще бъдат добавени скоро!</p>
         </div>
         
-        <div class="card">
+        <div class="card hover-effect">
             <h2>Дрескод</h2>
-            <p class="detail-text">Темата на нашата сватба е вдъхновена от природата и любовта. Ще се радваме, ако включите в облеклото си нашите цветове:</p>
+            <p class="detail-text">Темата на нашата сватба е вдъхновена от природата. Ще се радваме да включите тези цветове в облеклото си:</p>
             <div class="color-palette">
-                <div class="color-box sage"><span>Sage Green</span></div>
+                <div class="color-box sage"><span>Dark Sage</span></div>
                 <div class="color-box pink"><span>Hot Pink</span></div>
             </div>
         </div>
     </section>
 
     <!-- Форма за присъствие (RSVP) -->
-    <section class="rsvp">
-        <h2>Ще празнувате ли с нас?</h2>
-        <p>Моля, потвърдете своето присъствие до [Дата за потвърждение].</p>
-        <a href="#" class="btn-rsvp">Потвърди присъствие</a>
+    <section class="rsvp reveal">
+        <div class="glass-panel">
+            <h2>Ще празнувате ли с нас?</h2>
+            <p>Моля, потвърдете своето присъствие, когато обявим датата.</p>
+            <a href="#" class="btn-rsvp">Потвърди присъствие</a>
+        </div>
     </section>
 
     <!-- Футър -->
