@@ -1,0 +1,187 @@
+/* Основни настройки и цветове */
+:root {
+    --sage-green: #9DC183;
+    --sage-green-light: #e3ede0;
+    --hot-pink: #FF69B4;
+    --hot-pink-dark: #e0529d;
+    --text-dark: #333333;
+    --bg-light: #faf9f6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+}
+
+/* Начален екран (Hero) */
+.hero {
+    height: 100vh;
+    background-color: var(--sage-green-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 8px solid var(--hot-pink);
+}
+
+.hero-content {
+    background: rgba(255, 255, 255, 0.6);
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.subtitle {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 14px;
+    color: var(--sage-green);
+    margin-bottom: 10px;
+}
+
+.names {
+    font-size: 4rem;
+    color: var(--text-dark);
+    margin-bottom: 15px;
+}
+
+.names span {
+    color: var(--hot-pink);
+    font-style: italic;
+}
+
+.date {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+/* Секция с отброяване */
+.countdown-section {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: white;
+}
+
+.countdown-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: var(--sage-green);
+}
+
+.countdown-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.time-box {
+    background-color: var(--sage-green-light);
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 100px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.time-box span {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--hot-pink);
+}
+
+.time-box p {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Детайли */
+.details {
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    background-color: white;
+    padding: 50px;
+    border-radius: 15px;
+    max-width: 600px;
+    text-align: center;
+    border-top: 5px solid var(--sage-green);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.card h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+/* RSVP Секция */
+.rsvp {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: var(--sage-green-light);
+}
+
+.rsvp h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.rsvp p {
+    margin-bottom: 30px;
+}
+
+.btn-rsvp {
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: var(--hot-pink);
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    transition: background 0.3s ease;
+    font-weight: 600;
+}
+
+.btn-rsvp:hover {
+    background-color: var(--hot-pink-dark);
+}
+
+/* Футър */
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: var(--text-dark);
+    color: white;
+}
+
+/* Мобилна адаптивност */
+@media (max-width: 600px) {
+    .names {
+        font-size: 2.5rem;
+    }
+    .hero-content {
+        padding: 30px 20px;
+    }
+    .time-box {
+        min-width: 80px;
+        padding: 15px;
+    }
+}
